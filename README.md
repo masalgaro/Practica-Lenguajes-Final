@@ -3,3 +3,4 @@
 ### Link del video de sustentación: https://youtu.be/SNqpAAMEBMY
 
 El proyecto consiste en un programa con un campo de texto en el que el usuario puede escribir libremente palabras y emoticones con el teclado, al darle clic al botón para procesar la cadena de texto, el programa contará las palabras y los emoticones, y reemplazara cada emoticon por un emoji.
+Cada imagen se encuentra directamente en el repositorio debido a que el programa debería encontrar cada una más fácilmente desde la misma carpeta, e intentar moverlas a otra carpeta no funcionaba tampoco.
