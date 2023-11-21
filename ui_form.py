@@ -1,0 +1,52 @@
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Widget(object):
+    def setupUi(self, Widget):
+        Widget.setObjectName("Widget")
+        Widget.resize(800, 600)
+        self.lblLogo = QtWidgets.QLabel(Widget)
+        self.lblLogo.setPixmap(QtGui.QPixmap("logo_eafit.png"))
+        self.lblLogo.setGeometry(QtCore.QRect(10, 10, 220, 100))
+        self.lblLogo.setObjectName("lblLogo")
+        self.lblText = QtWidgets.QLabel(Widget)
+        self.lblText.setGeometry(QtCore.QRect(70, 150, 165, 25))
+        self.lblText.setStyleSheet("color: rgb(0, 0, 150);\n""font: 12pt \"MS Shell Dlg 2\";")
+        self.lblText.setObjectName("lblText")
+        self.lblTitle = QtWidgets.QLabel(Widget)
+        self.lblTitle.setGeometry(QtCore.QRect(280, 40, 580, 20))
+        self.lblTitle.setStyleSheet("color: rgb(0, 0, 0);\n""font: 14pt \"MS Shell Dlg 2\";")
+        self.lblTitle.setObjectName("lblTitle")
+        self.lblSub = QtWidgets.QLabel(Widget)
+        self.lblSub.setGeometry(QtCore.QRect(300, 70, 580, 20))
+        self.lblSub.setStyleSheet("color: rgb(0, 0, 0);\n""font: 14pt \"MS Shell Dlg 2\";")
+        self.lblSub.setObjectName("lblSub")
+        self.lblSalida = QtWidgets.QLabel(Widget)
+        self.lblSalida.setGeometry(QtCore.QRect(60, 350, 581, 30))
+        self.lblSalida.setStyleSheet("color: rgb(0, 150, 0);\n""font: 14pt \"MS Shell Dlg 2\";")
+        self.lblSalida.setObjectName("lblSalida")
+        self.lblEmoji = QtWidgets.QLabel(Widget)
+        self.lblEmoji.setGeometry(QtCore.QRect(60,400,600,30))
+        self.lblEmoji.setStyleSheet("color: rgb(150, 0, 0);\n""font: 14pt \"MS Shell Dlg 2\";")
+        self.lblEmoji.setObjectName("lblEmoji")
+        self.TXTpWD = QtWidgets.QLineEdit(Widget)
+        self.TXTpWD.setGeometry(QtCore.QRect(300, 150, 331, 25))
+        self.TXTpWD.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";")
+        self.TXTpWD.setObjectName("TXTpWD")
+        self.btnPwd = QtWidgets.QPushButton(Widget)
+        self.btnPwd.setGeometry(QtCore.QRect(290, 250, 250, 51))
+        self.btnPwd.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";")
+        self.btnPwd.setObjectName("btnPwd")
+
+        self.retranslateUi(Widget)
+        QtCore.QMetaObject.connectSlotsByName(Widget)
+
+    def retranslateUi(self, Widget):
+        _translate = QtCore.QCoreApplication.translate
+        Widget.setWindowTitle(_translate("Widget", "LENGUAJES DE PROGRAMACION"))
+        self.lblTitle.setText(_translate("Widget", "UNIVERSIDAD EAFIT PROYECTO FINAL"))
+        self.lblSub.setText(_translate("Widget", "LENGUAJES DE PROGRAMACION"))
+        self.lblSalida.setText(_translate("Widget", "Aquí contamos las palabras y emojis"))
+        self.btnPwd.setText(_translate("Widget", "Procesar cadena de texto"))
+        self.lblText.setText(_translate("Widget", "Introduce un texto:"))
+        self.lblEmoji.setText(_translate("Widget", "Aquí se muestra el texto procesado"))
